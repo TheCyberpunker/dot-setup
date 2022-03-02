@@ -19,11 +19,10 @@ echo -e "change the update line if you are in Parrot or other linux.   "
 sudo apt update && sudo parrot-upgrade -y
 
 #install dependencies
-sudo apt-get install -y arandr flameshot arc-theme feh i3blocks i3status i3 i3-wm lxappearance python3-pip rofi unclutter cargo compton papirus-icon-theme imagemagick
-sudo apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
-sudo apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
-sudo apt-get install -y i3-gaps
-pip3 install pywal
+sudo apt install -y arandr flameshot arc-theme feh i3blocks i3status i3 i3-wm lxappearance python3-pip rofi unclutter cargo compton papirus-icon-theme imagemagick
+sudo apt install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
+sudo apt install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
+sudo apt install -y i3-gaps
 
 #install fonts
 mkdir -p ~/.local/share/fonts/
@@ -38,6 +37,7 @@ wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.1-1/
 sudo dpkg -i alacritty_0.10.1-1_amd64_bullseye.deb
 sudo apt install -f
 
+pip3 install pywal
 #copy the dot config files
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
