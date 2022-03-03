@@ -162,3 +162,7 @@ bindsym $mod+Ctrl+Shift+Left resize grow width 10 px or 10 ppt
 
 # screenshot
 bindsym $mod+P exec flameshot gui
+# Obsidian
+bindsym $mod+O exec /opt/Obsidian/obsidian %U
+# peek
+bindsym $mod+I exec peek
