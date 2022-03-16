@@ -76,8 +76,8 @@ nano .fehgb # edit it with your preferred editor
 - Feature: Change workspace name (windows + n)
 - Dendency: Add jq dependency required to change Workspace name - lightweight and flexible command-line JSON
 
-#### Update 2022 / 03 / 16
-- Feature: Add battery level for latop
+#### Update 2022 / 03 / 12
+- Feature: Add battery level for laptop
 - New documentation
 
 ### Old updates
