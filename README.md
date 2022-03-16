@@ -12,14 +12,14 @@ Change the update line if you are in Parrot or other linux
 First update manually
 
 Parrot-OS
-````
+````bash
 sudo apt update
 sudo parrot-upgrade
 ````
 
 if you want this script in another OS change the packet manager `apt`
 
-```
+```bash
 ./install.sh
 ```
 
@@ -30,26 +30,26 @@ Credits xct
 ## Configuration
 **Change i3-blocks and order for the header bar.**
 go to:
-````js
-cd .config/i3/ // file location
-nano i3blocks.conf # // edit it with your preferred editor
+````bash
+cd .config/i3/  # file location
+nano i3blocks.conf  # edit it with your preferred editor
 ````
 
 **Change or add shortcuts**
-````js
-cd .config/i3/ // file location
-nano config # // edit it with your preferred editor
+````bash
+cd .config/i3/ # file location
+nano config  # edit it with your preferred editor
 ````
 
 **Change the opacity for the windows**
-````js
-cd .config/compton/ // file location
+````bash
+cd .config/compton/ # file location
 nano compton.conf # // edit it with your preferred editor
 ````
 
 **Change wallapeper**
-````js
-nano .fehgb // edit it with your preferred editor
+````bash
+nano .fehgb # edit it with your preferred editor
 ````
 
 ## Shortcuts for window manager
@@ -68,3 +68,17 @@ nano .fehgb // edit it with your preferred editor
 | Windows + O | Obsidian |
 | Windows + J | Flameshot (screenshots) |
 | Windows + I | Peek (recorder) |
+
+
+## Updates
+
+#### Update 2022 / 03 / 16
+- Feature: Change workspace name (windows + n)
+- Dendency: Add jq dependency required to change Workspace name - lightweight and flexible command-line JSON
+
+#### Update 2022 / 03 / 16
+- Feature: Add battery level for latop
+- New documentation
+
+### Old updates
+Transparency: Check all the commits https://github.com/TheCyberpunker/dot-setup/commits
