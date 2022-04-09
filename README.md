@@ -72,6 +72,9 @@ nano .fehgb # edit it with your preferred editor
 
 ## Updates
 
+#### Update 2022 / 04 / 09
+- Feature: Add Debian Bullseye installer (install-debian.sh)
+
 #### Update 2022 / 03 / 16
 - Feature: Change workspace name (windows + n)
 - Dendency: Add jq dependency required to change Workspace name - lightweight and flexible command-line JSON
