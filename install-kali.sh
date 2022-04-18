@@ -21,7 +21,7 @@ read -s -n 1 -p "Update the system. Press ANY key to continue."
 echo -e ""
 sleep 1
 #update
-sudo apt update && sudo parrot-upgrade -y
+sudo apt update && sudo apt upgrade -y
 echo -e "System updated"
 echo -e ""
 read -s -n 1 -p "Install dependencies. Press ANY key to continue."

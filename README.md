@@ -3,7 +3,14 @@ minimalist setup for Parrot / Debian - Linux/*
 
 Based on kali-clean from https://github.com/xct/kali-clean, i3 desktop setup.
 
-After cloning the repo just run ./install.sh from a non-root user.
+After cloning the repo just run from a non-root user
+
+```Shell
+
+Debian: ./install-debian.sh
+Kali: ./install-kali.sh
+Parrot: ./install.sh
+```
 
 ## Installation
 

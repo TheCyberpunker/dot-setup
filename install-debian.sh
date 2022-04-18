@@ -71,7 +71,8 @@ ninja
 sudo ninja install
 cd ../..
 #sudo apt install -y i3-gaps
-
+#neofeth command line system information
+sudo apt install -y neofetch
 sudo apt install -y jq
 
 #install utilities
