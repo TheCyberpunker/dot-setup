@@ -54,10 +54,11 @@ cd .config/compton/ # file location
 nano compton.conf # // edit it with your preferred editor
 ````
 
-**Change wallapeper**
+**Change wallpaper**
 ````bash
 nano .fehgb # edit it with your preferred editor
 ````
+
 
 ## Shortcuts for window manager
 | command | exec |
@@ -78,6 +79,10 @@ nano .fehgb # edit it with your preferred editor
 
 
 ## Updates
+
+#### Update 2022 / 04 / 18
+- Feature: Add Kali linux installer (install-kali.sh)
+- Dependency: add neofetch (display system information)
 
 #### Update 2022 / 04 / 09
 - Feature: Add Debian Bullseye installer (install-debian.sh)
