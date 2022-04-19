@@ -34,6 +34,7 @@ sudo apt install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb
 sudo apt install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
 sudo apt install -y i3-gaps
 sudo apt install -y neofetch
+sudo apt install -y cbatticon
 sudo apt install -y jq
 sudo apt install -y zsh
 #install utilities

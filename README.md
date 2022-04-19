@@ -80,6 +80,9 @@ nano .fehgb # edit it with your preferred editor
 
 ## Updates
 
+#### Update 2022 / 04 / 19
+- Feature: Add cbatticon (cbatticon notify about the battery level) utility to i3-bar
+
 #### Update 2022 / 04 / 18
 - Feature: Add Kali linux installer (install-kali.sh)
 - Dependency: add neofetch (display system information)

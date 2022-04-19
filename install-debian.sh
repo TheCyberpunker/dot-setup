@@ -84,6 +84,7 @@ sudo apt install -y peek flameshot
 apt install -y lightdm unzip p7zip-full rxvt-unicode
 
 # install firefox
+apt install -y cbatticon
 apt install -y firefox-esr
 
 echo -e "Dependencies installed \n"
