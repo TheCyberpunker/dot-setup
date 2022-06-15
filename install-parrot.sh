@@ -1,19 +1,15 @@
 #!/bin/bash
-echo -e " -------------------------------------------------------------"
-echo -e "the_____      _               _____             _             "
-echo -e "  / ____|    | |             |  __ \           | |            "
-echo -e " | |    _   _| |__   ___ _ __| |__) |   _ _ __ | | _____ _ __ "
-echo -e " | |   | | | | '_ \ / _ \ '__|  ___/ | | | '_ \| |/ / _ \ '__|"
-echo -e " | |___| |_| | |_) |  __/ |  | |   | |_| | | | |   <  __/ |   "
-echo -e "  \_____\__, |_.__/ \___|_|  |_|    \__,_|_| |_|_|\_\___|_|   "
-echo -e "         __/ |                                                "
-echo -e "        |___/                                        v0.1     "
-echo -e "--------------------------------------------------------------"
-echo -e "This setup is the same of kali-clean from xct, just a little  "
-echo -e "check the original https://github.com/xct/kali-clean          "
-echo -e "change the update line if you are in Parrot or other linux.   "
-echo -e "--------------------------------------------------------------"
-echo -e "##############################################################"
+echo -e " ---------------------------------------------------------------------"
+echo -e "The_____      _               _____             _                     "
+echo -e "   ________  ______  __________  ____  __  ___   ____ __ __________   "
+echo -e "  / ____/\ \/ / __ )/ ____/ __ \/ __ \/ / / / | / / //_// ____/ __ \  "
+echo -e " / /      \  / __  / __/ / /_/ / /_/ / / / /  |/ / ,<  / __/ / /_/ /  "
+echo -e "/ /___    / / /_/ / /___/ _, _/ ____/ /_/ / /|  / /| |/ /___/ _, _/   "
+echo -e "\____/   /_/_____/_____/_/ |_/_/    \____/_/ |_/_/ |_/_____/_/ |_|v1.0"
+echo -e "----------------------------------------------------------------------"
+echo -e "change the update line if you are in Parrot or other linux.           "
+echo -e "----------------------------------------------------------------------"
+echo -e "######################################################################"
 ## $(whoami) var user
 
 ## sleep 1 // pause
@@ -85,12 +81,14 @@ read -s -n 1 -p "Configure and copy the dot files, Press ANY key to continue"
 echo -e ""
 sleep 1
 #copy the dot config files
+
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/thecyberpunker
 mkdir -p ~/HDbackup
+mkdir -p ~/Wallpaper
 cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
@@ -100,6 +98,7 @@ cp .fehbg ~/.fehbg
 cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 cp encrypt.sh ~/thecyberpunker
 cp decrypt.sh ~/thecyberpunker
+cp wallpaper.jpg ~/Wallpaper
 chmod +x ~/thecyberpunker/encrypt.sh
 chmod +x ~/thecyberpunker/decrypt.sh
 

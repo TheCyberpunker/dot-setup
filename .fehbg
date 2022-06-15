@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill --randomize ~/Pictures/*
+feh --no-fehbg --bg-fill --randomize ~/Wallpaper/*
