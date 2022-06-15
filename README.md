@@ -9,7 +9,7 @@ After cloning the repo just run from a non-root user
 
 Debian: ./install-debian.sh
 Kali: ./install-kali.sh
-Parrot: ./install.sh
+Parrot: ./install-parrot.sh
 ```
 
 ## Installation
