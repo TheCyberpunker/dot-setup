@@ -29,6 +29,7 @@ sudo apt install -y arandr arc-theme feh i3blocks i3status i3 i3-wm lxappearance
 sudo apt install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
 sudo apt install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev 
 sudo apt install -y i3-gaps
+sudo apt install -y i3-gaps #required for validation
 sudo apt install -y neofetch
 sudo apt install -y cbatticon
 sudo apt install -y jq
@@ -44,8 +45,10 @@ read -s -n 1 -p "Install fonts - obsidianMD / Brave-browser (nerdfonts/Iosevka,R
 echo -e ""
 #install problem with new kernels, better used appimage - obsidianMD << FIX THIS
 #wget https://github.com/obsidianmd/obsidian-releases/releases/download/v0.12.15/obsidian_0.12.15_amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v0.14.15/obsidian_0.14.15_amd64.deb
 #sudo dpkg -i obsidian_0.12.15_amd64.deb
-#sudo chmod 4755 /opt/Obsidian/chrome-sandbox
+sudo dpkg -i obsidian_0.14.15_amd64.deb
+sudo chmod 4755 /opt/Obsidian/chrome-sandbox
 
 #install brave-browser
 sudo apt install -y apt-transport-https curl
