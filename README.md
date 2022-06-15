@@ -30,9 +30,6 @@ if you want this script in another OS change the packet manager `apt`
 ./install.sh
 ```
 
-After the script is done reboot and select i3 (top right corner) on the login screen. Then open a terminal (`ctrl+return`) run `lxa>
-
-Credits xct
 
 ## Configuration
 **Change i3-blocks and order for the header bar.**
