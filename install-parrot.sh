@@ -109,7 +109,7 @@ chmod +x ~/thecyberpunker/decrypt.sh
 rm alacritty_0.10.1-1_amd64_bullseye.deb
 rm Iosevka.zip
 rm RobotoMono.zip
-rm obsidian_0.12.15_amd64.deb
+rm obsidian_0.14.15_amd64.deb
 
 echo "Done! Grab some wallpaper and run pywal -i filename to set your color scheme."
 echo -e ""
