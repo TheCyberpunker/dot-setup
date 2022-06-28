@@ -1,7 +1,5 @@
 # dot-setup
-minimalist setup for Parrot / Debian - Linux/*
-
-Based on kali-clean from https://github.com/xct/kali-clean, i3 desktop setup.
+Minimalist setup for Parrot - Kali / Debian - Linux/*
 
 After cloning the repo just run from a non-root user
 
