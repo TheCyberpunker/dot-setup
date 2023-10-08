@@ -43,6 +43,7 @@ sudo apt-get install -y build-essential dkms linux-headers-$(uname -r)
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt full-upgrade -y
+sudo apt install terminator -y
 echo -e "System updated"
 echo -e ""
 read -s -n 1 -p "Install dependencies. Press ANY key to continue"
@@ -50,6 +51,15 @@ echo -e ""
 
 sleep 1
 #install dependencies
+sudo apt install arandr -y # monitor setup
+sudo apt install arc-theme -y # A flat theme with transparent elements
+sudo apt install feh -y # a fast and light image viewer
+sudo apt install i3blocks -y # The hacker-friendly status_command for Sway and i3
+sudo apt install i3status -y # Generates status bar to use with i3bar, dzen2 or xmobar
+sudo apt install i3 -y # A tiling window manager for X11
+sudo apt install i3-wm -y # window manager with libraries and fonts
+sudo apt install lxappearance -y # LXDE GTK+ theme switcher
+
 sudo apt install -y arandr arc-theme feh i3blocks i3status i3 i3-wm lxappearance
 sudo apt install -y python3-pip rofi unclutter cargo compton papirus-icon-theme
 sudo apt install -y imagemagick gcc zsh
