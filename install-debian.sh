@@ -39,6 +39,7 @@ sleep 1
 #sudo apt update && sudo parrot-upgrade -y
 # fix problem with gcc
 sudo apt-get install -y build-essential dkms linux-headers-$(uname -r)
+sudo apt install gcc -y # GNU Compiler Collection (GCC).
 
 sudo apt update -y
 sudo apt upgrade -y
@@ -59,16 +60,23 @@ sudo apt install i3status -y # Generates status bar to use with i3bar, dzen2 or 
 sudo apt install i3 -y # A tiling window manager for X11
 sudo apt install i3-wm -y # window manager with libraries and fonts
 sudo apt install lxappearance -y # LXDE GTK+ theme switcher
+sudo apt install python3-pip -y # Installing pip for Python 3
+sudo apt install rofi -y # Rofi: A window switcher, application launcher and dmenu replacement
+sudo apt install unclutter -y # simply click on Copy button to copy the command and paste.
+sudo apt install cargo -y # The Rust package manager
+sudo apt install compton -y # A compositor for X11.
+sudo apt install papirus-icon-theme -y # Papirus - it's free and open source SVG-based icon theme for Linux with material and flat style.
+sudo apt install imagemagick -y # ImageMagick is a for editing and manipulating digital images
+sudo apt install zsh -y # Zsh is a shell designed for interactive use.
 
-sudo apt install -y arandr arc-theme feh i3blocks i3status i3 i3-wm lxappearance
-sudo apt install -y python3-pip rofi unclutter cargo compton papirus-icon-theme
-sudo apt install -y imagemagick gcc zsh
+# libraries and configuration
 sudo apt install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev
-sudo apt install -y xcb libxcb1-dev libzxcb-icccm4-dev libyajl-dev
+sudo apt install -y xcb libxcb1-dev libyajl-dev
 sudo apt install -y libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev
 sudo apt install -y libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev
 sudo apt install -y libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
-sudo apt install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev
+sudo apt install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-icccm4-dev xcb
+
 
 ## install i3-gaps with kali-clean ninja
 git clone https://www.github.com/Airblader/i3 i3-gaps
@@ -97,9 +105,9 @@ echo -e "Dependencies installed \n"
 read -s -n 1 -p "Install fonts - obsidianMD / Brave-browser (nerdfonts/Iosevka,RobotoMono). Press ANY key to continue"
 echo -e ""
 #install obsidianMD
-#wget https://github.com/obsidianmd/obsidian-releases/releases/download/v0.12.15/obsidian_0.12.15_amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.14/obsidian_1.4.14_amd64.deb
 # FIX: Try to install obsidian with the app image
-#sudo dpkg -i obsidian_0.12.15_amd64.deb
+sudo dpkg -i obsidian_1.4.14_amd64.deb
 #sudo chmod 4755 /opt/Obsidian/chrome-sandbox
 
 #install brave-browser
@@ -124,13 +132,13 @@ echo -e ""
 
 sleep 1
 #install alacritty terminal or other terminal
-wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.1-1/alacritty_0.10.1-1_amd64_bullseye.deb
-sudo dpkg -i alacritty_0.10.1-1_amd64_bullseye.deb
-sudo apt install -f
-echo -e "Alacritty installed"
-echo -e ""
-read -s -n 1 -p "Configure and copy the dot files, Press ANY key to continue"
-echo -e ""
+#wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.1-1/alacritty_0.10.1-1_amd64_bullseye.deb
+#sudo dpkg -i alacritty_0.10.1-1_amd64_bullseye.deb
+#sudo apt install -f
+#echo -e "Alacritty installed"
+#echo -e ""
+#read -s -n 1 -p "Configure and copy the dot files, Press ANY key to continue"
+#echo -e ""
 pip3 install pywal
 
 sleep 1
@@ -138,11 +146,11 @@ sleep 1
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
-mkdir -p ~/.config/alacritty
+#mkdir -p ~/.config/alacritty
 mkdir -p ~/thecyberpunker
 mkdir -p ~/HDbackup
 cp .config/i3/config ~/.config/i3/config
-cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+#cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/config ~/.config/rofi/config
