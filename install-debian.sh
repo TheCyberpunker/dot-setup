@@ -68,6 +68,7 @@ sudo apt install compton -y # A compositor for X11.
 sudo apt install papirus-icon-theme -y # Papirus - it's free and open source SVG-based icon theme for Linux with material and flat style.
 sudo apt install imagemagick -y # ImageMagick is a for editing and manipulating digital images
 sudo apt install zsh -y # Zsh is a shell designed for interactive use.
+sudo apt install caja -y # file manager
 
 # libraries and configuration
 sudo apt install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev
